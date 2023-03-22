@@ -5,8 +5,11 @@ let submitBtn;
 $(document).ready(() => {
     searchByName("").then(() => {
         $(".loading-screen").fadeOut(500)
+        $("body").css("overflow", "visible")
+
     })
 })
+
 //  open navbar
 function openSideNav() {
     $(".side-nav-menu").animate({
